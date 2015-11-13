@@ -2,27 +2,15 @@ package bdriver;
 
 import java.awt.AWTException;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.Rectangle;
 import java.awt.Robot;
-import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
-import java.awt.image.FilteredImageSource;
-import java.awt.image.ImageFilter;
-import java.awt.image.ImageProducer;
-import java.awt.image.RenderedImage;
 import java.io.File;
-import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.imageio.ImageIO;
-import javax.swing.GrayFilter;
-import net.sourceforge.javaocr.awt.*;
-import net.sourceforge.javaocr.ocrPlugins.mseOCR.CharacterRange;
-import net.sourceforge.javaocr.ocrPlugins.mseOCR.OCRScanner;
 
 public class BDriver {
 
