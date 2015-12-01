@@ -1,6 +1,9 @@
+package bdriver;
 
-import bdriver.Pixel;
+
+//import bdriver.Pixel;
 import java.awt.image.*;
+import javafx.scene.paint.Color;
 
 public class MedianFilter {
 
@@ -101,7 +104,9 @@ public class MedianFilter {
                 int G = median(green);
                 int B = median(blue);
                 //set the new pixel value using the median just found
-                int spixel = Pixel.createRGB(R, G, B);
+                
+                
+                int spixel = ((R&0x0ff)<<16)|((G&0x0ff)<<8)|(B&0x0ff);
                 dstImage.setRGB(j, k, spixel);
             }
         }
